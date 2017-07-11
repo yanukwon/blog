@@ -1,0 +1,45 @@
+# Built with Jekyll 3.2.0
+
+# Setup
+title:               memorandus
+tagline:             'of daily life and readings'
+description:         'A personal blog made by Woensug Eric Choi for his own memoradus of daily life and readings, since 2016 summer'
+url:                 'http://kickflipin.github.io'
+baseurl:             '/blog'
+
+# About/contact
+author:
+  name:              Woensug Eric Choi
+  url:               https://www.instagram.com/erikku_choi/
+  email:             woensug.eric.choi@gmail.com
+
+# Permalinks
+
+permalink: pretty
+permalink: /:title/
+
+# Set encoding to UTF-8
+encoding: utf-8
+
+# Collections for texts
+collections:
+  texts:
+    output: true
+
+# Markdown specs
+markdown: kramdown
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Custom vars
+version:             0.0.6
+
+# Exclusions from the final site
+exclude: [optional, vendor]
